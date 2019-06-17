@@ -1,0 +1,32 @@
+#contact-form {
+    font-size: 2em;
+}
+
+.row{
+    margin: 20px;
+}
+
+input{
+    width: 100%;
+    height: 5vh;
+}
+
+.select {
+    width: 100%;
+    height: 5vh;
+
+}
+
+::placeholder{
+    font-size: 0.8em;
+}
+
+.form-control{
+    font-size: 1em;
+}
+
+.head-desc{
+    margin: 10px;
+    text-align: center;
+    font-family: sans-serif;
+}

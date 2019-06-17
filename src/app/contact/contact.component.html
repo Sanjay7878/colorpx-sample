@@ -1,0 +1,80 @@
+<div class="container-fluid">
+  <div class="row">
+      <div class="col-xl-8 offset-xl-2 py-5">
+          <h1 class="head-desc">Submit your details below and we will contact you within 24 hours.</h1>
+          <br>
+          <br>
+          <form id="contact-form" method="post" action="contact.php" role="form">
+              <div class="messages"></div>
+              <div class="controls">         
+                  <div class="row">
+                      <div class="col-md-6">
+                          <div class="form-group">
+                              <label for="form_name">Firstname *</label>
+                              <input id="form_name" type="text" name="firstName" [(ngModel)]='firstName' class="form-control" placeholder="Please enter your firstname *" required="required" data-error="Firstname is required.">
+                              <div class="help-block with-errors"></div>
+                          </div>
+                      </div>
+                      <div class="col-md-6">
+                          <div class="form-group">
+                              <label for="form_lastname">Lastname *</label>
+                              <input id="form_lastname" type="text" name="lastName" [(ngModel)]='lastName' class="form-control" placeholder="Please enter your lastname *" required="required" data-error="Lastname is required.">
+                              <div class="help-block with-errors"></div>
+                          </div>
+                      </div>
+                  </div>
+                  <div class="row">
+                      <div class="col-md-6">
+                          <div class="form-group">
+                              <label for="form_email">Email *</label>
+                              <input id="form_email" type="email" name="email" [(ngModel)]='email' class="form-control" placeholder="Please enter your email *" required="required" data-error="Valid email is required.">
+                              <div class="help-block with-errors"></div>
+                          </div>
+                      </div>
+                      <div class="col-md-6">
+                          <div class="form-group">
+                              <label for="form_need">Please specify your need *</label><br>
+                              <select id="form_need" name="event" [(ngModel)]='event' class="form-control" required="required" data-error="Please specify your need.">
+                                  <option value=""></option>
+                                  <option value="Wedding" style="font-size: 1em">Wedding</option>
+                                  <option value="Portraits" style="font-size: 1em">Portraits</option>
+                                  <option value="Birthday Party" style="font-size: 1em">Birthday Party</option>
+                                  <option value="Other Events" style="font-size: 1em">Other Events</option>
+                              </select>
+                              <div class="help-block with-errors"></div>
+                          </div>
+                      </div>
+                  </div>
+                  <div class="row">
+                    <div class="col-md-12">
+                      <div class="form-group">
+                          <label for="form_email">Contact Number *</label>
+                          <input id="form_email" type="contact" name="mobile" [(ngModel)]='mobile' class="form-control" placeholder="Please enter your contact number *" required="required" data-error="Valid email is required.">
+                          <div class="help-block with-errors"></div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="row">
+                      <div class="col-md-12">
+                          <div class="form-group">
+                              <label for="form_message">Message *</label>
+                              <textarea id="form_message" name="description" [(ngModel)]='description' class="form-control" placeholder="Help us with the description of the event along with the dates on which you need us*" rows="4" required="required" data-error="Please, leave us a message."></textarea>
+                              <div class="help-block with-errors"></div>
+                          </div>
+                      </div>
+                      <div class="col-md-12">
+                          <input type="submit" class="btn btn-success btn-send" value="Submit the Details" style="font-size: 1em">
+                      </div>
+                  </div>
+                  <div class="row">
+                      <div class="col-md-12">
+                          <p class="text-muted">
+                              <strong>*</strong> These fields are required.</p>
+                      </div>
+                  </div>
+              </div>
+          
+          </form>
+      </div>
+  </div>
+</div>

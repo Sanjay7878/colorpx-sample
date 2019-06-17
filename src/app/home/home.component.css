@@ -1,0 +1,43 @@
+.abt-heading{
+    color: rgb(83, 80, 80);
+    font-family: 'Luckiest Guy', cursive;
+    font-size: 2.5rem;
+}
+
+.abt-main {
+    font-family: 'Overlock', cursive;
+}
+
+.jumbotron{
+   background: rgb(219, 219, 199);
+}
+
+.abt-p {
+    margin-top: 15px;
+}
+
+.service-back{
+    background: rgba(172, 174, 175, 0.274);
+    justify-content: center;
+}
+.services-head{
+    font-size: 4rem;
+    font-family: 'Audiowide', cursive;
+    text-align: center;
+    margin: 10px;
+    font-weight: bold;
+}
+
+.serv-topic {
+    font-size: 3rem;
+    text-align: center;
+    font-family: 'Audiowide', cursive;
+    
+}
+
+.serv-desc{
+    font-size: 1.8rem;
+    text-align: center;
+    margin: 20px;
+    font-family: 'Overlock', cursive;
+}
